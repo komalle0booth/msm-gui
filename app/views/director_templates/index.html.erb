@@ -3,6 +3,32 @@
 </h1>
 
 <hr>
+  
+<form action="/insert_director_record" method="post">
+  <div>
+    <label for="name_field">Name</label>
+    <input id="name_field" type="text" name="director_name">
+  </div>
+
+  <div>
+    <label for="dob_field">Dob</label>
+    <input id="dob_field" type="date" name="director_dob">
+  </div>
+
+  <div>
+    <label for="bio_field">Bio</label>
+    <textarea id="bio_field" name="director_bio" rows="3"></textarea>
+  </div>
+
+  <div>
+    <label for="image_field">Image</label>
+    <input id="image_field" type="text" name="director_image">
+  </div>
+
+  <button>Create director</button>
+</form>
+
+<hr>
 
 <table border="1">
   <tr>
