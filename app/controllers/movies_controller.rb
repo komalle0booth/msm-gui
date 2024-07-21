@@ -16,8 +16,7 @@ class MoviesController < ApplicationController
   end
 
   def create
-    #params hash looks like this:
-    #{("the_title"=>1 )}
+
 
     m = Movie.new
     m.title = params.fetch("the_title")
@@ -29,7 +28,7 @@ class MoviesController < ApplicationController
 
     m.save
 
-    rediect_to
+    redirect_to("/movies")
     
     #Retrive the user's inputs from params
 
